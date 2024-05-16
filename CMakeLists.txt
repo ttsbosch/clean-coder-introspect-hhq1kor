@@ -18,8 +18,13 @@ enable_testing()
 add_compile_options("--coverage")
 add_executable(
   cleancoder
-  TradePorcessor.cpp
-  TradeProcessor.Tests.cpp
+  main.cpp
+  processor.cpp
+  trade_processor.cpp
+  string_utils.cpp
+  xml_generator.cpp
+  trade_processor.test.cpp
+  string_utils.test.cpp
 )
 target_link_libraries(
   cleancoder
